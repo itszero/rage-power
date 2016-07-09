@@ -1,0 +1,49 @@
+{
+  "name": "rage-power",
+  "version": "1.0.0",
+  "description": "Activate the raging power mode in the React world",
+  "jsnext:main": "index.jsx",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel index.jsx -o index.js",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "power",
+    "mode",
+    "rage",
+    "react"
+  ],
+  "author": "Zero Cho <itszero@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash.throttle": "^4.0.1",
+    "textarea-caret": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-plugin-syntax-object-rest-spread": "^6.8.0",
+    "babel-plugin-transform-class-properties": "^6.10.2",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.10.3",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1"
+  },
+  "peerDependencies": {
+    "react": ">= 0.14",
+    "react-dom": ">= 0.14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/itszero/rage-power.git"
+  },
+  "babel": {
+    "presets": ["es2015", "react"],
+    "plugins": [
+      "syntax-object-rest-spread",
+      "transform-object-rest-spread",
+      "transform-class-properties",
+      "transform-es2015-modules-commonjs"
+    ]
+  }
+}
